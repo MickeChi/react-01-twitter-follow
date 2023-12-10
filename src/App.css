@@ -1,0 +1,70 @@
+.mc-tw-follow{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 0.8rem;
+  justify-content: space-between;
+}
+
+.mc-tw-follow-header{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+
+.mc-tw-follow-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.mc-tw-follow-span{
+  opacity: 0.6;
+}
+
+.mc-tw-follow-avatar{
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
+}
+
+.mc-tw-follow-button{
+  margin-left: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: bold;
+  transition: .3s ease background-color;
+  border: 1px solid #000000;
+}
+
+.mc-tw-follow-button:hover{
+  background-color: #09f;
+}
+
+.mc-tw-follow-button.is-following{
+  border: 1px solid #ddd;
+  background-color: #000000;
+  color: #fff;
+  min-width: 135px;
+
+}
+
+.mc-tw-follow-button.is-following:hover{
+  border: 1px solid #ff0000;
+  background-color: #210101;
+  color: #f00;
+  transition: .3s ease all;
+}
+
+.mc-tw-follow-unfollow{
+  display: none;
+}
+
+.mc-tw-follow-button.is-following:hover .mc-tw-follow-txt{
+  display: none;
+}
+
+.mc-tw-follow-button.is-following:hover .mc-tw-follow-unfollow{
+  display: block;
+}
